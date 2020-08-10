@@ -15,3 +15,4 @@ Prosty projekt, gra/ zabawa w bilę nr 8 polegająca na zadaniu pytania, następ
 3.Poczekaj na wynik - odpowiedź zostanie wyświetlona pod wpisem
 
 ### URL of project
+**https://kruchy1980.github.io/magic-8-ball/**
