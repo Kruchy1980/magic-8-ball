@@ -1,0 +1,150 @@
+/* Main */
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+    background-image: linear-gradient(315deg, #6f00ff 0%, #3306afc4 32%);
+}
+
+
+/* Wrapper */
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 1000px;
+    height: 600px;
+}
+
+
+/* Info section */
+
+.info {
+    text-align: center;
+    font-size: 30px;
+}
+
+
+/* Main Title styles */
+
+.main-title {
+    margin-bottom: 10px;
+    font-size: 60px;
+}
+
+
+/* Ball image box */
+
+.ball-img {
+    position: relative;
+    height: 250px;
+}
+
+
+/* Ball image icon/ img */
+
+.ball-img img {
+    position: absolute;
+    top: 30px;
+    left: 300px;
+    width: 300px;
+    /* Because it will be clickable image we can change the cursor for pointer */
+    cursor: pointer;
+}
+
+
+/* Question area styles */
+
+.question-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 24px;
+}
+
+
+/* Question area title */
+
+.question-title {
+    margin-bottom: 10px;
+    font-size: 36px;
+    text-transform: uppercase;
+}
+
+
+/* Input style */
+
+.typed-text {
+    padding: 10px 20px;
+    width: 80%;
+    font-size: 20px;
+    border: 2px solid #333;
+    border-radius: 10px;
+}
+
+
+/* Answer box */
+
+.question-area .answer {
+    margin-top: 30px;
+}
+
+
+/* Style prepared for JS span for logic */
+
+.question-area .answer span {
+    font-weight: bold;
+}
+
+
+/* Error box styles */
+
+.question-area .error {
+    font-weight: bold;
+    color: #ff0000;
+}
+
+
+/* Animation call */
+
+.shake-animation {
+    /* Animation name, duration time of animation, repeat */
+    animation: shake 1s 1;
+}
+
+
+/* Animation create */
+
+@keyframes shake {
+    0% {
+        left: 290px;
+    }
+    20% {
+        left: 340px;
+    }
+    40% {
+        left: 290px;
+    }
+    60% {
+        left: 340px;
+    }
+    80% {
+        left: 290px;
+    }
+    1000% {
+        left: 300px;
+    }
+}
